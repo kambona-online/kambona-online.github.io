@@ -13,31 +13,19 @@ body {
   color: black;
   width: 90%;
   margin: 0 auto;
-  font-family: sans serif;
+  font-family: sans-serif;
   font-size: 14px;
 }
 
-.net {
-	float: left;
-	margin-left: 40px;
-}
-
-.net a {
-	padding: 0 10px;
-	color: black;
-	display: inline-block;
-	font-size: 1.7em;
-}
-
 .header {
-	background-color: red;
-	color: black;
+	background-color: #ed1c24;
 	height: 30px;
 	line-height: 30px;
 }
 
 .header a:hover {
-	background-color: maroon;
+	color: white;
+	font-weight: bold;
 }
 
 .menu ul {
@@ -57,181 +45,86 @@ body {
 	text-align: center;
 }
 
-.one {
-	background-image: url('../img/wizara asili.jpg');
-	background-size: cover;
-	background-position: center;
-	border-radius: 5px;
-	margin: 5px auto;
-	width: 95%;
+.net {
+    float: left;	
 }
 
-.one h4 {
-	text-align: center;
-	color: black;
-	font-weight: bold;
-	padding: 10px;
-}
-
-.one:nth-child(2) {
-	background-image: url('../img/hummer.jpg');
-}
-
-.one:nth-child(3) {
-	background-image: url('../img/man united.jpg');
-}
-
-.one:nth-child(4) {
-	background-image: url('../img/maua.jpg');
-}
-
-.left {
-	width: 70%;
-	float: left;
-	padding-right: 10px;
-}
-
-.alone {
-     background-color: #333;
-     margin-bottom: 10px;
-}
-
-.alone img {
-	width: 100%;
-	height: 400px;
-}
-
-.mbilimbili {
-	padding-left: 10px;
-}
-
-.mbilimbili h3 {
-	background-color: #ed1c24;
-	text-align: center;
-	padding: 10px 0;
-}
-
-.yenyewe {
-	width: 50%;
-	float: left;
-	background-color: #333;
-	margin-bottom: 5px;
-	position: relative;
-}
-
-.yenyewe:nth-child(odd) {
-	margin-left: 1%;
-	width: 49%;
-}
-
-.yenyewe img {
-	width: 100%;
-	height: 250px;
-	transition: 0.5s;
-}
-
-.yenyewe img:hover {
-	transform: scale(1.02);
-}
-
-.yenyewe h6 {
-	background-color: #ed1c24;
-	padding: 5px 10px;
-	position: absolute;
-	top: 0;
-}
-
-.yenyewe p {
-    padding: 0 10px;
-}
-
-.online {
-    clear: both;
-}
-
-.online h6 {
-	background-color: #ed1c24;
-	padding: 10px;
-	text-align: center;
-}
-
-.content {
-	float: right;
-	width: 40%;
-	padding-left: 10px;
-}
-
-.many {
-	overflow-y: scroll;
-	height: 200px;
-}
-
-.many a {
+.net a {
+	margin-left: 40px;
 	text-decoration: none;
-	color: black;
-	display: inline-block;
-	border-bottom: 1px solid black;
+}
+
+/*===================end of navigation bar ============*/
+
+.ads {
+	margin: 10px auto;
+	width: 80%;
+}
+
+.ads img {
 	width: 100%;
-	padding-top: 10px;
-	padding-left: 10px;
-
 }
 
-.many a:hover {
+.ads h3 {
+	color: #838282;
 	background-color: #333;
-}
-
-.many img {
-	width: 20%;
-	height: 50px;
-	float: left;
-	border-radius: 5px;
-}
-
-.many p {
-	margin-left: 23%;
-}
-
-.right {
-	float: right;
-	width: 30%;	
-	padding-right: 10px;
-}
-
-.habari {
-	background-color: #333;
-	border-bottom: 1px solid black;
-	padding: 10px 0 0 5px;
-}
-
-.habari:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.habari img {
-	width: 30%;
-	height: 100px;
-	float: left;
-	margin-right: 10px;	
-	border-radius: 5px;
-	transition: .5s;
-}
-
-.habari img:hover {
-	transform: scale(1.05);
-}
-
-.habari p {
-	margin-left: 33%;
-}
-
-.video h6 {
 	text-align: center;
-	background-color: #ed1c24;
-	padding: 5px 0;
+	padding: 10px;
 }
+/*=============== ads end here =====================*/
+
+.magazeti h2 {
+	background-color: #ed1c24;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 5px;
+} 
+
+.magazeti ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.magazeti li {
+  flex: 1 1 250px;
+  list-style: none;
+  position: relative;
+  margin: 0 2px;
+}
+
+.magazeti img {
+  height: 400px;
+  width: 100%;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+}
+
+.back {
+  transform: rotateY(90deg);
+  width: 100%;
+}
+
+.magazeti li:hover .front {
+    animation: spin 0.2s forwards ease-in;
+}
+
+.magazeti li:hover .back {
+    animation: spin 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg)
+  }
+  100% {
+    transform: rotateY(90deg)
+  }
+} 
+
+/*======== mwisho wa kurasa za mbele na numa za magazeti =======*/
 
 .footer {
 	clear: both;
@@ -257,7 +150,7 @@ body {
 
 .gotop {
 	position: fixed;
-	bottom: -15px;
+	bottom: -5px;
 	right: 30%;
 	border-radius: 10px;
 	background-color: #ed1c24;
@@ -266,41 +159,3 @@ body {
 
 
 
-
-/*style for magazeti page only*/
-.magazeti h2 {
-	background-color: #333;
-	padding: 10px 0;
-	text-align: center;
-	margin-bottom: 10px;
-} 
-
-.gazeti {
-	width: 25%;
-	float: left;
-	background-color: #333;
-	padding: 0 5px;
-}
-
-.gazeti img:hover {
-	transform: scale(1.02);
-}
-
-.gazeti img {
-	width: 100%;
-	height: 300px;
-	transition: .3s;
-}
-
-.gazeti h5 {
-	background-color: #ed1c24;
-	padding: 5px;
-}
-
-.gazeti p {
-	padding: 0 5px;
-}
-
-.gazeti span {
-	float: right;
-}
