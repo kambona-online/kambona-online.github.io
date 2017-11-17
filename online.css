@@ -19,39 +19,16 @@ body {
 
 .header {
 	background-color: #ed1c24;
-	height: 30px;
-	line-height: 30px;
-}
-
-.header a:hover {
-	color: white;
-	font-weight: bold;
-}
-
-.menu ul {
-	float: right;
-}
-
-.menu ul li {
-	float: left;
-	list-style: none;
-}
-
-.menu ul li a {
-	text-decoration: none;
-	display: inline-block;
-	color: black;
-    padding: 0 30px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
 }
 
-.net {
-    float: left;	
-}
-
-.net a {
-	margin-left: 40px;
+.header a {
 	text-decoration: none;
+	color: black;
+	font-size: 2em;
+	letter-spacing: 0.5em;
 }
 
 /*===================end of navigation bar ============*/
@@ -129,6 +106,7 @@ body {
 .footer {
 	clear: both;
 	border-top: 2px solid #ddd;
+	padding-bottom: 40px;
 }
 
 .social {
@@ -143,18 +121,20 @@ body {
 }
 
 .footer p {
-	padding:20px 0 40px 0;
 	text-align: center;
 	color: #838282;
 }
 
-.gotop {
+.gotop a {
 	position: fixed;
-	bottom: -5px;
+	bottom: -10px;
 	right: 30%;
 	border-radius: 10px;
 	background-color: #ed1c24;
-	padding: 5px 5px 10px 5px;
+	padding: 5px 5px 15px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
 }
 
 
